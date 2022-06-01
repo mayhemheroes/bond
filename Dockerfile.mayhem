@@ -1,0 +1,17 @@
+FROM --platform=linux/amd64 ubuntu:22.04
+
+RUN apt-get update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    clang \
+    cmake \
+    zlib1g-dev \
+    libboost-dev \
+    libboost-thread-dev \
+    curl
+
+RUN curl -sSL https://get.haskellstack.org/ | sh
+
+COPY . /repo
+WORKDIR /repo/build
+RUN cmake ..
+RUN make -j8
