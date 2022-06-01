@@ -1,5 +1,7 @@
 project: rnshah9/bond
 target: bf
+tests:
+  - file://examples/cs/core/blob/schema.bond
 
 cmds:
   - cmd: /repo/build/examples/cpp/core/bf/bf @@
