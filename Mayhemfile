@@ -1,0 +1,5 @@
+project: rnshah9/bond
+target: bf
+
+cmds:
+  - cmd: /repo/build/examples/cpp/core/bf/bf @@
