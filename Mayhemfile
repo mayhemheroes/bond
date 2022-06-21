@@ -1,6 +1,6 @@
-project: rnshah9/bond
+project: bond
 target: bf
-tests:
+testsuite:
   - file://examples/cs/core/blob/schema.bond
 
 cmds:
