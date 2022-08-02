@@ -2,6 +2,5 @@ project: bond
 target: bf
 testsuite:
   - file://examples/cs/core/blob/schema.bond
-
 cmds:
-  - cmd: /repo/build/examples/cpp/core/bf/bf @@
+  - cmd: /install/bin/bf @@
