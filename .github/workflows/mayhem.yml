@@ -71,7 +71,7 @@ jobs:
           path: metadata.json
 
       - name: Start analysis
-        uses: ForAllSecure/mcode-action@v1
+        uses: ForAllSecure/mcode-action@long-runs
         with:
           mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
           args: --image ${{ steps.meta.outputs.tags }} --duration 300
